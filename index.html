@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <h1>Ryan Kung's User Page</h1>
+            <h1 id="mainHeader">Ryan Kung's User Page</h1>
             <nav>
                 <ul>
                     <li><a href="#aboutMeSection">About Me</a></li>
@@ -81,11 +81,54 @@
             <hr>
             <div id="contactFormWrapper">
                 <h2>Contact Me!<span id="mailSVG"></span></h2>
+                <form action="https://httpbin.org/post" method="POST" id="contactForm">
+                    <fieldset id="contactInfo">
+                        <legend>Contact Information</legend>
+                        <name-info>
+                            <label for="formName">Name *:</label>
+                            <input type="text" name="formName" id="formName" placeholder="John Doe" pattern="[A-Za-z ]{1,32}" required minlength="1" maxlength="32">
+                        </name-info>
+                        <br>
+                        <email-info>
+                            <label for="formEmail">E-mail *:</label>
+                            <input type="email" name="formEmail" id="formEmail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" minlength="8"
+                                placeholder="JohnDoe@example.com" required>
+                        </email-info>
+                        <br>
+                        <reason-info>
+                            <label for="formReason">Reason:</label>
+                            <input list="reasonList" id="formReason" name="formReason" placeholder="Buisness" pattern="[A-Za-z ]{1,32}" maxlength="32">
+                            <datalist id="reasonList">
+                                <option value="Business"></option>
+                                <option value="Inquiries"></option>
+                                <option value="Feedback"></option>
+                            </datalist>
+                        </reason-info>
+                    </fieldset>
+                    <fieldset id="contactPurpose">
+                        <legend>Message *</legend>
+                        <br>
+                        <comment-area>
+                            <label for="formComments"></label>
+                            <textarea name="formComments" id="formComments" cols="80" rows="5" placeholder="Lorem ipsum" minlength='1' maxlength='250' required></textarea>
+                        </comment-area>
+                        <br>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
             <hr>
         </main>
         <footer>
-
+            <nav>
+                <a href="#mainHeader">Jump To Top</a>
+            </nav>
+            <p> This page was made by Ryan Kung </p>
+            <address>
+                Ryan Kung<br>
+                9500 Gilman Dr<br>
+                CA 92093<br>
+            </address>
         </footer>
     </body>
 </html>
