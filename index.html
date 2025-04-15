@@ -14,6 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="#aboutMeSection">About Me</a></li>
+                    <li><a href="#teamSection">Team Section</a></li>
                     <li><a href="#interestSection">My Interests</a></li>
                     <li><a href="#projectSection">Project Section</a></li>
                     <li><a href="#contactFormWrapper">Contact Me</a></li>
@@ -28,12 +29,38 @@
                     <img src="assets/images/me.jpg" width="350" height="600" alt="An Image of Myself">
                     <figcaption>A picture of me!</figcaption>
                 </figure>
-                <p>My name is Ryan Kung and I am a Math-CS Major at UCSD.
+                <p>My name is <b>Ryan Kung</b> and I am a <i>Math-CS Major</i> at <b>UCSD</b>.
                     I am interested in doing front end Web Development and am familiar with HTML, CSS, and JavaScript.
                     I am also interested in back end and am familiar with Java and C++.
                     I love gaming and am especially interested in making games.</p>
             </section>
-            <br>
+            <section id="teamSection">
+                <h2>Team 10</h2>
+                <a href="https://github.com/cse110-sp25-group-10">Our GitHub</a>
+                <br>
+                <video width="320" height="180" controls>
+                    <source src="assets/videos/teamintro.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <br>
+                <audio controls>
+                    <source src="assets/sounds/team.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <br>
+                <p>Song from:
+                    <br>
+                    <cite>
+                        Motivational Piano Background Music by NIKI | https://soundcloud.com/lukyanovnikita
+                        <br>
+                        Music promoted by https://www.free-stock-music.com
+                        <br>
+                        Creative Commons / Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+                        <br>
+                        https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+                    </cite>
+                </p>
+            </section>
             <section id="interestSection">
                 <hgroup>
                     <h2>My Interests</h2>
@@ -46,7 +73,7 @@
                     <p>I <strong>love</strong> gaming and all things related to gaming! I used to play the game <i>Geometry Dash</i> semi-professional
                         and was at some point playing some of the hardest levels in the game, peaking at beating the
                         <a href="/https://www.youtube.com/watch?v=1QX1cHXRWQs&t=1s">99th hardest level</a>
-                        ever made. Nowadays, with much less free time, I tend to play a variety of games fairly casually and
+                        ever made. Nowadays, with much less free time, I tend to play a variety of games fairly <em>casually</em> and
                         occassional dabble in speedrunning. My favorite genres are platformers and rougelikes.</p>
                 </hgroup>
                 <details>
@@ -58,19 +85,16 @@
                         <li>Night in the Woods</li>
                         <li>Binding of Isaac</li>
                     </ol>
-                    <br>
                 </details>
                 <hgroup>
                     <h3>Pen Spinning</h3>
                     <p>A relatively niche hobby of mine that I've been doing on and off since I was in middle school.</p>
                 </hgroup>
-                <br>
                 <hgroup>
                     <h3>Music</h3>
                     <p>I love all kinds of music but I typical tend to listen to Classic and Alternative Rock.</p>
                 </hgroup>
             </section>
-            <br>
             <section id="projectSection">
                 <h2>My Projects</h2>
                 <ul>
@@ -109,6 +133,17 @@
                     </fieldset>
                     <fieldset id="contactPurpose">
                         <legend>Message *</legend>
+                        <label for="formFavColor">Favorite Color:</label>
+                        <select name="formFavColor" id="formFavColor">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="orange">Orange</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="purple">Purple</option>
+                            <option value="pink">Pink</option>
+                            <option value="other">Other</option>
+                        </select>
                         <br>
                         <comment-area>
                             <label for="formComments"></label>
